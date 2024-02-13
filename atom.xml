@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Random Musings</title> <link href="https://fake.org"/> <link type="application/atom+xml" rel="self" href="https://fake.org/atom.xml"/> <updated>Tue, 13 Feb 2024 17:50:47 +0200</updated> <author> <name>daninus14</name> </author> <entry> <link type="text/html" rel="alternate" href="https://fake.org/posts/2024-02-13.html"/> <title>2024-02-13</title> <published>2024-02-13 14:08:59</published> <updated>2024-02-13 14:08:59</updated> <author> <name>daninus14</name> <uri>https://fake.org</uri> </author> <content type="html">&lt;!-- **** your post here (remove this line) **** --&gt;
+
+&lt;!-- format: could be &#039;html&#039; (for raw html) or &#039;md&#039; (for markdown).  --&gt;
+
+&lt;h1&gt;Why is Common Lisp not the Most Popular Programming Language?&lt;/h1&gt;
+
+&lt;p&gt;This question is always asked. My thoughts are a little bit different than what I&#039;ve read online.&lt;/p&gt;
+
+&lt;p&gt;I think the real reason may be because of the fact that &lt;strong&gt;there is&lt;/strong&gt; a standard. Yes, you read that correctly.&lt;/p&gt;
+
+&lt;p&gt;The great benefit of a standard is that no matter what implementation you use, if they follow the standard, and your code follows the standard, you should have portable code between implementations. Further, and probably the greatest benefit, is that we don&#039;t have to worry about backwards compatibility. Code from about 40 years ago (yeah, even before the standard!) still runs today (I don&#039;t have a link at hand, but it was one of those popular lisp posts that I&#039;m sure you can easily find) by simply importing a package. &lt;/p&gt;
+
+&lt;p&gt;However, a standard comes with a cost. The cost is called &lt;a href=&quot;https://en.wikipedia.org/wiki/Diffusion_of_responsibility&quot; &gt;diffusion of responsibility&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The diffusion of responsibility refers to the decreased responsibility of action each member of a group feels when they are part of a group.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What we are lacking is a body or organization who will take on the responsibility of promoting common lisp.&lt;/p&gt;
+
+&lt;p&gt;Take a look at the &lt;a href=&quot;https://www.python.org/psf-landing/&quot; &gt;Python Foundation&lt;/a&gt; for example:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The Python Software Foundation is an organization devoted to advancing open source technology related to the Python programming language.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And where do they get their &lt;a href=&quot;https://www.python.org/psf/sponsorship/&quot; &gt;money from&lt;/a&gt;?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;PyCon US typically generates over 65% of the PSF’s revenue. With PyCon US 2020 and 2021 happening virtually, the PSF may lose $1.2 million USD of expected revenue for those two years.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Even if there are different groups or individuals trying to promote CL, what we really need is one person who will lead a main CL only conference which is not just an &lt;a href=&quot;https://www.european-lisp-symposium.org/&quot; &gt;academic conference&lt;/a&gt;. The purpose of the conference is both in itself to promote CL and serve as a place for CL companies, users, and implementors to get together, and &lt;em&gt;also&lt;/em&gt; for fundraising for the organization.&lt;/p&gt;
+
+&lt;p&gt;Those funds can then be used to address the biggest issues plaguing CL it seems from time immemorial, namely documentation and marketing. Marketing includes presenting the documentation in both an easy to understand and pleasant way, and also producing thorough and detailed references.&lt;/p&gt;
+
+&lt;p&gt;Further, the funds can be used to address anything lacking in the ecosystem for which there has not been a serious enough effort to provide a solution, and for which a solution could be provided with a given financial investment. I am sure there are &lt;em&gt;many&lt;/em&gt; common lisp developers out there who would be thrilled to create common lisp projects that are robust and for the benefit of the community, if they had the financial support to be able to do it.&lt;/p&gt;
+
+&lt;p&gt;As an example of this, take a look at a new language: Julia. They have what looks like a &lt;a href=&quot;https://juliacon.org/2024/&quot; &gt;popular conference&lt;/a&gt;, and a &lt;a href=&quot;https://julialang.org/research/#sponsors&quot; &gt;bunch of sponsors&lt;/a&gt;. The Sloan Foundation by itself &lt;a href=&quot;https://sloan.org/grant-detail/7999&quot; &gt;gave almost 1 million USD in 2017&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Another example is Racket, which is also covered in the academic conference mentioned above, and they even have two conferences! An &lt;a href=&quot;https://con.racket-lang.org/&quot; &gt;official one&lt;/a&gt;, and &lt;a href=&quot;https://racketfest.com/&quot; &gt;another&lt;/a&gt; one from the users.&lt;/p&gt;
+
+&lt;p&gt;So in conclusion, we need an organization which will aggressively work to fundraise for Common Lisp in order to promote the usage of the language by providing solutions to ecosystem issues that no one is taking care of in a robust enough way.&lt;/p&gt;
+</content> </entry> </feed>
