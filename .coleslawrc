@@ -2,7 +2,7 @@
 (;; Required information
  :author "daninus14"                         ;; to be placed on post pages and in the copyright/CC-BY-SA notice
  :deploy-dir "deploy/"                ;; for Coleslaw's generated HTML to go in
- :domain "https://fake.org"                           ;; to generate absolute links to the site content. Note: with :cname option of gh-pages, this requires a url scheme, e.g. https://fake.org 
+ :domain "https://daninus14.github.io"                           ;; to generate absolute links to the site content. Note: with :cname option of gh-pages, this requires a url scheme, e.g. https://fake.org 
  :routing ((:post           "posts/~a") ;; to determine the URL scheme of content on the site
            (:tag-index      "tag/~a")
            (:month-index    "date/~a")
@@ -27,7 +27,7 @@
            (gh-pages :url "git@github.com:daninus14/daninus14.github.io.git"
                      :branch "gh-pages"
                      :remote "origin"
-                     :cname t
+                     :cname "https://daninus14.github.io"
                      ;; :cname t  ;; if you want to use the custom domain --- see http://pages.github.com/
                      )
            ;; versioned deployment. Remove comment to enable symlinked, timestamped deploys.
