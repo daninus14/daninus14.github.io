@@ -11,7 +11,7 @@
            (:tag-feed       "tag/~a.xml")
            (:sitemap        "~a.xml"))
  :title "Random Musings" ;; a site title
- :theme "hyde"                        ;; to select one of the themes in "coleslaw/themes/"
+ :theme  "firsttheme";; "hyde"                        ;; to select one of the themes in "coleslaw/themes/"
  
  ;; Optional information
  :excerpt-sep "<!--more-->"           ;; to set the separator for excerpt in content 
