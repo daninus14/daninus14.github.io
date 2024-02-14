@@ -1,5 +1,5 @@
 git add . && \
 git commit -m"latest update" && \
 git push && \
-rm deploy/* && \
+# rm deploy/* && \
 coleslaw deploy
