@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> <title>Random Musings</title> <link href="https://daninus14.github.io"/> <link type="application/atom+xml" rel="self" href="https://daninus14.github.io/atom.xml"/> <updated>Wed, 14 Feb 2024 11:11:54 +0200</updated> <author> <name>daninus14</name> </author> <entry> <link type="text/html" rel="alternate" href="https://daninus14.github.io/posts/2024-02-13.html"/> <title>2024-02-13</title> <published>2024-02-13 14:08:59</published> <updated>2024-02-13 14:08:59</updated> <author> <name>daninus14</name> <uri>https://daninus14.github.io</uri> </author> <content type="html">&lt;!-- **** your post here (remove this line) **** --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"> <title>Random Musings</title> <link href="https://daninus14.github.io"/> <link type="application/atom+xml" rel="self" href="https://daninus14.github.io/atom.xml"/> <updated>Wed, 14 Feb 2024 11:52:16 +0200</updated> <author> <name>daninus14</name> </author> <entry> <link type="text/html" rel="alternate" href="https://daninus14.github.io/posts/2024-02-13.html"/> <title>2024-02-13</title> <published>2024-02-13 14:08:59</published> <updated>2024-02-13 14:08:59</updated> <author> <name>daninus14</name> <uri>https://daninus14.github.io</uri> </author> <content type="html">&lt;!-- **** your post here (remove this line) **** --&gt;
 
 &lt;!-- format: could be &#039;html&#039; (for raw html) or &#039;md&#039; (for markdown).  --&gt;
 
@@ -33,7 +33,7 @@
 
 &lt;p&gt;Even if there are different groups or individuals trying to promote CL, what we really need is one person who will lead a main CL only conference which is not just an &lt;a href=&quot;https://www.european-lisp-symposium.org/&quot; &gt;academic conference&lt;/a&gt;. The purpose of the conference is both in itself to promote CL and serve as a place for CL companies, users, and implementors to get together, and &lt;em&gt;also&lt;/em&gt; for fundraising for the organization.&lt;/p&gt;
 
-&lt;p&gt;Those funds can then be used to address the biggest issues plaguing CL it seems from time immemorial, namely documentation and marketing. Marketing includes presenting the documentation in both an easy to understand and pleasant way, and also producing thorough and detailed references.&lt;/p&gt;
+&lt;p&gt;Those funds can then be used to address the biggest issues plaguing CL, it seems from time immemorial, namely documentation and marketing. Marketing includes presenting the documentation in both an easy to understand and pleasant way, and also producing thorough and detailed references.&lt;/p&gt;
 
 &lt;p&gt;Further, the funds can be used to address anything lacking in the ecosystem for which there has not been a serious enough effort to provide a solution, and for which a solution could be provided with a given financial investment. I am sure there are &lt;em&gt;many&lt;/em&gt; common lisp developers out there who would be thrilled to create common lisp projects that are robust and for the benefit of the community, if they had the financial support to be able to do it.&lt;/p&gt;
 
