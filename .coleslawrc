@@ -33,7 +33,7 @@
            ;; versioned deployment. Remove comment to enable symlinked, timestamped deploys.
                                         ; (versioned)
            ;; default deploy method is rsync
-           (rsync "-avz" "--delete" "--exclude" ".git/" "--exclude" ".gitignore" "--copy-links")
+           ;; (rsync "-avz" "--delete" "--exclude" ".git/" "--exclude" ".gitignore" "--copy-links")
            )
  :sitenav ((:url "http://daninus14.github.io/" :name "Home")
            ;; (:url "http://twitter.com/danielnussenbaum" :name "Twitter")
