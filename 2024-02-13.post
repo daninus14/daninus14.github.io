@@ -5,11 +5,6 @@ date: 2024-02-13 14:08:59
 format: md
 ;;;;;
 
-<!-- **** your post here (remove this line) **** -->
-<!-- format: could be 'html' (for raw html) or 'md' (for markdown).  -->
-
-# Why is Common Lisp not the Most Popular Programming Language?
-
 This question is always asked. My thoughts are a little bit different than what I've read online.
 
 I think the real reason may be because of the fact that **there is** a standard. Yes, you read that correctly.
