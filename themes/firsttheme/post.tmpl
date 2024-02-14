@@ -1,27 +1,27 @@
 {namespace coleslaw.theme.firsttheme}
 
 {template post}
-<div class="article-meta">{\n}
-  <h1 class="title">{$post.title}</h1>{\n}
-  <div class="tags">{\n}
+<div class="row-fluid">{\n}
+  <h1 class="page-header">{$post.title}</h1>{\n}
+  <p>
     {if $post.tags}
       Tagged as {foreach $tag in $post.tags}
         <a href="{$config.domain}/{$tag.url}">{$tag.name}</a>{nil}
           {if not isLast($tag)},{sp}{/if}
       {/foreach}
     {/if}
-  </div>{\n}
-  <div class="date">{\n}
+  </p>
+  <p class="date-posted">
     {if $post.date}
       Written on {$post.date}
     {/if}
-  </div>{\n}
-</div>{\n}
-<div class="article-content">{\n}
+  </p>
+
   {$post.text |noAutoescape}
-</div>{\n}
-<div class="relative-nav">{\n}
-  {if $prev} <a href="{$config.domain}/{$prev.url}">Previous</a><br> {/if}{\n}
-  {if $next} <a href="{$config.domain}/{$next.url}">Next</a><br> {/if}{\n}
+  
+  <ul class="pager">
+    {if $prev}<li class="previous"><a href="{$config.domain}/{$prev.url}">&larr; Previous</a></li>{/if}{\n}
+    {if $next}<li class="next"><a href="{$config.domain}/{$next.url}">Next &rarr;</a></li>{/if}{\n}
+  </ul>
 </div>{\n}
 {/template}

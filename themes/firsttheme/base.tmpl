@@ -1,15 +1,14 @@
 {namespace coleslaw.theme.firsttheme}
 
 {template base}
-<!doctype html>{\n}
+<!DOCTYPE html>{\n}
 <html lang="{$config.lang}">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset={$config.charset}">
     <title>{$config.title}</title>
-    <meta http-equiv="content-type" content="text/html;" charset="{$config.charset}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//fonts.googleapis.com/css?family=Vollkorn:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
-    <link href="//fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css" />
-    <link href= "{$config.domain}/css/style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{$config.domain}/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="{$config.domain}/css/custom.css" rel="stylesheet" media="screen">
     <link rel="alternate" href="{$config.domain}/rss.xml" type="application/rss+xml" />
     {if $injections.head}
       {foreach $injection in $injections.head}
@@ -18,40 +17,60 @@
     {/if}
   </head>
   <body>
-    <div class="navigation">
-      <a href="{$config.domain}">{$config.title}</a> |
-      {foreach $link in $config.sitenav}
-        {if $link.relative}
-          <a href="{$config.domain}/{$link.url}">{$link.name}</a>
-        {else}
-          <a href="{$link.url}">{$link.name}</a>
-        {/if}
-        {if not isLast($link)} {sp}|{sp} {/if}
-      {/foreach}
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="offset2 span8">
+          <div class="row-fluid">
+            <div class="navbar navbar-inverse">
+              <div class="navbar-inner">
+                <a class="brand" href="{$config.domain}">{$config.title}</a>
+                <ul class="nav">
+                  {foreach $link in $config.sitenav}
+                  <li>
+                    {if $link.relative}
+                      <a href="{$config.domain}/{$link.url}">{$link.name}</a>
+                    {else}
+                      <a href="{$link.url}">{$link.name}</a>
+                    {/if}
+                  </li>
+                  {/foreach}
+                </ul>
+              </div>
+            </div>
+          </div>  
+
+          <div class="row-fluid">
+            {$raw |noAutoescape}
+          </div>
+
+          {if $injections.body}
+            {foreach $injection in $injections.body}
+              <div class="row-fluid">
+                {$injection |noAutoescape}
+              </div>
+            {/foreach}
+          {/if}
+
+          <div class="row-fluid">
+            <hr>
+            <p class="fineprint">Unless otherwise credited, all material
+            {if $config.license}
+              {$config.license}
+            {else}
+              <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+               <img alt="Creative Commons License" style="border-width:0" src="{$config.domain}/img/cc-by-sa.png" />
+              </a>
+            {/if}
+            by {$config.author}
+            <a id="coleslaw-logo" href="https://github.com/redline6561/coleslaw">
+              Coleslaw
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="content">
-      {$raw |noAutoescape}
-    </div>
-    {if $injections.body}
-      {foreach $injection in $injections.body}
-        {$injection |noAutoescape}
-      {/foreach}
-    {/if}
-    <div class="fineprint">
-      <hr>
-      Unless otherwise credited all material
-      {if $config.license}
-        {$config.license}
-      {else}
-        <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
-        CC BY-SA 4.0 DEED
-        </a>
-      {/if}
-      by {$config.author}
-      <a id="coleslaw-logo" href="https://github.com/redline6561/coleslaw">
-        Coleslaw
-      </a>
-    </div>
+
+    <script src="{$config.domain}/js/bootstrap.min.js"></script>
   </body>
 </html>
 {/template}
